@@ -41,8 +41,15 @@ app.use(express.static(path.join(__dirname, 'public')))
 // )
 
 // Routes
-// Create route for search
-// Create route for results
+// Create route for search page
+
+app.get('/', (req, res) => {
+res.render('search')
+})
+// Create route for results page
+app.get('/results', (req, res) => {
+	res.render('results')
+})
 
 // Catch 404 and forward to error handler
 app.use((req, res, next) => {
@@ -51,6 +58,9 @@ app.use((req, res, next) => {
 
 // Error Handler
 app.use((err, req, res, next) => {
+	next(createError(404))
+})
+
   // Only provides full error in development
   res.locals.message = err.message
   res.locals.error = req.app.get('env') === 'development' ? err : {}
