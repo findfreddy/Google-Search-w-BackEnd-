@@ -1,0 +1,27 @@
+.Search {
+  color: blue;
+}
+
+button.search-submit {
+  column-fill: red;
+}
+.para1 {
+  color: black;
+}
+
+#primary {
+  colour: orange;
+}
+
+p {
+  width: 50%;
+}
+
+div.class {
+  border: 1px dottted grey;
+  border-radius: 5px;
+}
+
+section.highlight {
+  border: yellow solid 2px;
+}

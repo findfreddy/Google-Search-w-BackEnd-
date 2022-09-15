@@ -1,0 +1,10 @@
+.articlebox {
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+
+p {
+  color: red;
+  font-size: 48;
+}
